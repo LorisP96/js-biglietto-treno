@@ -11,14 +11,12 @@ let userMessage;
 
 if ( userAge > 65 ) {
     userDiscPrice = userPrice - (userPrice * 0.4);
-    userMessage = "sconto applicato del 40%, il costo del suo biglietto è di" + ' ' + userDiscPrice + '€'; 
+    userMessage = "sconto applicato del 40%, il costo del suo biglietto è di" + ' ' + userDiscPrice.toFixed(2) + '€'; 
 }   else if (userAge < 18 ) {
     userDiscPrice = userPrice - (userPrice * 0.2);
-    userMessage = "sconto applicato del 20%, il costo del suo biglietto è di" + ' ' + userDiscPrice + '€'; 
+    userMessage = "sconto applicato del 20%, il costo del suo biglietto è di" + ' ' + userDiscPrice.toFixed(2) + '€'; 
 } else {
-    userDiscPrice === userPrice;
-    userMessage = "nessuno sconto applicato, il costo del suo biglietto è di" + ' ' + userDiscPrice + '€'; 
+    userMessage = "nessuno sconto applicato, il costo del suo biglietto è di" + ' ' + userPrice.toFixed(2) + '€'; 
 }
 
-console.log (userMessage);
-console.log (userDiscPrice);
+console.log (userMessage)
