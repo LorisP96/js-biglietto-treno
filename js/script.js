@@ -19,4 +19,4 @@ if ( userAge > 65 ) {
     userMessage = "nessuno sconto applicato, il costo del suo biglietto è di" + ' ' + userPrice.toFixed(2) + '€'; 
 }
 
-console.log (userMessage)
+document.getElementById('result').innerHTML = userMessage;
